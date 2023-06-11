@@ -5,6 +5,8 @@
   <meta name="description" content="Life of Danni - Hobbies, Irish, Biker Girl, Plants, Axolotls, Crested Geckos, Flying Trapeze, Photography">
   <title>Life of Danni</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -20,10 +22,14 @@
     }
 
     .title {
-      font-size: 32px;
+      font-family: 'Indie Flower', cursive;
+      font-size: 28px;
       font-weight: bold;
       color: #333;
       margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .categories {
@@ -40,18 +46,42 @@
       text-decoration: none;
       border-radius: 5px;
       transition: background-color 0.3s ease;
+      font-family: 'Indie Flower', cursive;
+      font-size: 16px;
+      border: 2px solid transparent;
     }
 
     .categories a:hover {
       background-color: #a8c9e9;
     }
 
+    .categories a:active,
+    .categories a:focus {
+      outline: none;
+      border-color: #333;
+    }
+
+    p {
+      padding: 10px;
+      border-left: 2px solid #333;
+      border-right: 2px solid #333;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .image-container {
+      float: right;
+      margin: 10px;
+    }
+
     footer {
-      background-color: #f2f2f2;
+      background-color: #999;
       padding: 10px;
       text-align: center;
       font-size: 12px;
-      color: #666;
+      color: #fff;
     }
   </style>
 </head>
@@ -67,6 +97,20 @@
     <a href="pets.html">Pets</a>
     <a href="photography.html">Photography</a>
   </div>
+
+  <div class="image-container">
+    <img src="https://www.instagram.com/p/CYjQL6kM-NA/" alt="Photo of Danni showing off on some silks">
+  </div>
+
+  <p>
+    Hey there, my name is Danni.
+  </p>
+  <p> 
+    Welcome to my web page. I have created this for my first project with Code Institute. I didn't really know what to create, so I thought this might be a good idea in order to showcase my chaotic life and interests. Please take your time looking through all my hobbies and interests above or send me some questions through the contact form provided, and I will get back to you as soon as I can. 
+  </p>
+  <p>
+    I hope you enjoy!
+  </p>
 
   <footer>
     &copy; 2023 Life of Danni. Created for Code Institute.
